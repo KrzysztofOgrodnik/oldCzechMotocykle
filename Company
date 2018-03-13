@@ -1,0 +1,56 @@
+public class Company
+{
+	public static void main(String[]args)
+	{
+			Employee one = new Employee();
+		 	one.imieINazwisko = "Jacek Placek";
+		 	one.plec = "M";
+		 	one.rokUrodzenia = 1992;
+		 	one.numerTelefonu = 997997997;
+		 	one.adres = "Pcim 2/18";
+		 	one.stazPracy = "Staz pracy: " + 2.5; 
+
+		 	Employee two = new Employee();
+		 	two.imieINazwisko = "Kasia Beautiful";
+		 	two.plec = "K";
+		 	two.rokUrodzenia = 1990;
+		 	two.numerTelefonu = 998998998;
+		 	two.adres = "Gozdzikowa 7";
+		 	two.stazPracy = "Staz pracy: " + 1.8;
+
+		 	Employee three = new Employee();
+		 	three.imieINazwisko = "Marek Zegarek";
+		 	three.plec = "M";
+		 	three.rokUrodzenia = 1987;
+		 	three.numerTelefonu = 999999999;
+		 	three.adres = "Szwajcaria pod Suwalkami";
+		 	three.stazPracy = "Staz pracy: " + 3;
+			
+
+			String oneInfo 	  = one.imieINazwisko + "\n" 
+							  + one.plec + "\n"
+							  + one.rokUrodzenia + "\n"
+							  + one.numerTelefonu + "\n"
+							  + one.adres + "\n"
+							  + one.stazPracy + "\n";
+
+			String twoInfo 	  = two.imieINazwisko + "\n" 
+							  + two.plec + "\n"
+							  + two.rokUrodzenia + "\n"
+							  + two.numerTelefonu + "\n"
+							  + two.adres + "\n"
+							  + two.stazPracy + "\n";
+
+			String threeInfo  = three.imieINazwisko + "\n" 
+							  + three.plec + "\n"
+							  + three.rokUrodzenia + "\n"
+							  + three.numerTelefonu + "\n"
+							  + three.adres + "\n"
+							  + three.stazPracy + "\n";
+
+			System.out.println("To Twoi pracownicy: ");
+			System.out.println(oneInfo+ "\n" + twoInfo + "\n" + "\n" + threeInfo);
+
+		
+	}
+}
