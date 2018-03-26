@@ -1,0 +1,29 @@
+import java.util.Random;
+
+public class CalcTest {
+	public static void main(String[]args) {
+
+		Calculator calc1 = new Calculator();
+				
+		// powolujemy dcdo zycia 4 losowe liczby {0-1}
+		
+		Random rand = new Random();
+
+		
+		double a = rand.nextDouble();
+		double b = rand.nextDouble();
+		double c = rand.nextDouble();
+		double d = rand.nextDouble();
+
+
+		double addResult1 = calc1.add(a, b);
+		double addResult2 = calc1.add(a, b, c);
+		double addResult3 = calc1.add(a, b, c, d);
+
+		System.out.println(addResult1);
+		System.out.println(addResult2);
+		System.out.println(addResult3);
+
+	}
+	
+}
