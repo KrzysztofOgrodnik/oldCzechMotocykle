@@ -1,0 +1,45 @@
+
+public class Liczydlo {
+// Dzien dobry, policzymy dochod na glowe w rodzinie
+	
+	double a,b,c,d,e;
+	double result1 = a + b;
+	double result2 = result1 - c;
+	double result3 = result2 * d;
+	double result4 = result3 / e;
+	
+//	suma wyplat
+	double add(double a, double b) {
+	double result1 = a + b;
+	return result1;
+	//System.out.println("Wyplaty lacznie wynosza ", result1);
+}
+
+// odjac rachunki
+	
+	double subtract(double result1, double c) {
+	double result2 = result1 - c;
+	return result2;
+
+	//System.out.println("Po odjeciu rachunkow ", + result2);
+	}
+	
+// przemonozyc  na zlotowki
+	
+	double multiply(double result2, double d) {
+	double result3 = result2 * d;
+	return result3;
+	//System.out.println("Na zlotowki to bedzie  ", + result3);
+			
+	}
+// podzielic na ilosc osob w rodzinie
+	
+	double divide(double result3, double e) {
+	double result4 = result3 / e;
+	return result4;
+	//System.out.println("Na lebka wyjdzie ", result4);
+	
+	
+	}
+	
+}
