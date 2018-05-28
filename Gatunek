@@ -1,0 +1,24 @@
+
+public class Gatunek {
+
+	String gatunek;
+	String odzywianie;
+	int noznosc;
+	String srodowisko;
+	String cecha;
+	
+	
+	//konstruktor1
+	Gatunek(String gatunek, String odzywianie, int noznosc, String srodowisko, String cecha) {
+		this(gatunek, odzywianie, noznosc, srodowisko);
+		this.cecha = cecha;		
+	}
+	//konstruktor2
+	Gatunek(String gatunek, String odzywianie, int noznosc, String srodowisko) {
+		this.gatunek = gatunek;
+		this.odzywianie = odzywianie;
+		this.noznosc = noznosc;
+		this.srodowisko= srodowisko;
+		
+}
+}
