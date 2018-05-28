@@ -1,0 +1,11 @@
+
+public class Park {
+public static void main(String[]args) {
+	Gatunek diplodok = new Gatunek("Diplodok", "roslinozerny", 4, "lad", "potulny");
+	Gatunek welociraptor = new Gatunek("Welociraptor", "miesozerny", 2, "lad");
+	
+	
+	System.out.println(diplodok.gatunek +" "+ diplodok.odzywianie +" "+ diplodok.noznosc +" "+ diplodok.srodowisko +" "+ diplodok.cecha);
+	System.out.println(welociraptor.gatunek +" "+ welociraptor.odzywianie +" "+ welociraptor.noznosc +" "+ welociraptor.srodowisko);
+}
+}
