@@ -1,0 +1,27 @@
+package ogrod;
+
+
+public class Ogrod {
+	
+	// sadzimy rosliny! nasza działka będzie tablicą 3x3;
+	
+	
+	
+	
+	String marchew = "marchew";
+	String banan = "banan";
+	String jablko = "jablko";
+	String pietruszka = "pietruszka";
+	String cebula = "cebula";
+	String wisnia = "wisnia";
+	String agrest = "agrest";
+	String ogorek = "ogorek";
+	String kaktus = "kaktus";
+	
+
+	
+	public static String[][] garden = {{"marchew","banan","jabłko"},{"pietruszka","cebula","wiśnia"},{"agrest","ogórek","kaktus"}};
+	
+	}
+
+
