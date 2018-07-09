@@ -1,0 +1,72 @@
+package ogrodnik;
+
+import ogrod.Ogrod;
+import java.util.Scanner;
+public class Ogrodnik {
+
+public String[][] garden;
+
+public static void main(String[] args) {
+	
+	Scanner input = new Scanner(System.in);
+	
+	
+	final String poniedzialek = "poniedzialek";
+	final String wtorek = "wtorek";
+	final String sroda = "sroda";
+	final String czwartek = "czwartek";
+	final String piatek = "piatek";
+	final String sobota = "sobota";
+	final String niedziela = "niedziela";
+
+	String[][] garden = new Ogrod().garden;
+	
+	System.out.println("Pan Ogrodnik wstal rano, podrapal sie po glowie i spojrzal w kalendarz, zeby wiedziec,co dzisiaj podlewa. "
+			+ "Każdego dnia podlewał bowiem inne rośliny."
+			+ " Zapytal wiec żonę:");
+	System.out.println("-Kochanie, jaki dzisiaj mamy dzień?");
+	String dzien = input.nextLine();
+	System.out.println("A Ona odpowiedziała:");
+	
+		
+	switch(dzien) {
+	
+	case poniedzialek:
+		System.out.println("Poniedzialek, kotek. Podlewasz zgodnie z rozpiską: " + Ogrod.garden[0][0] + ", " + Ogrod.garden[0][1] + ", " + Ogrod.garden[0][2]);
+		break;
+	case wtorek:
+		System.out.println("Wtorek, skarbie. Podlewasz zgodnie z rozpiską: " + Ogrod.garden[1][1] + ", " + Ogrod.garden[2][1] + ", " + Ogrod.garden[3][2]);
+		break;
+	case sroda:
+		System.out.println("Sroda, slonce. Podlewasz zgodnie z rozpiską: " + Ogrod.garden[1][0] + ", " + Ogrod.garden[0][1] + ", " + Ogrod.garden[1][2]);
+		break;
+	case czwartek:
+		System.out.println("Czwarek, panie majster. Podlewasz zgodnie z rozpiską: " + Ogrod.garden[2][0] + ", " + Ogrod.garden[1][1] + ", " + Ogrod.garden[1][2]);
+		break;
+	case piatek:
+		System.out.println("Juz piatek, wiesz? Podlewasz zgodnie z rozpiską: " + Ogrod.garden[1][0] + ", " + Ogrod.garden[1][1] + ", " + Ogrod.garden[0][2]);
+		break;
+	case sobota:
+		System.out.println("Sobota to lekka robota. Podlewasz zgodnie z rozpiską: " + Ogrod.garden[2][0] + ", " + Ogrod.garden[0][1] + ", " + Ogrod.garden[1][2]);
+		break;
+	case niedziela:
+		System.out.println("Niedziela, mamy wolne!:");
+		break;
+	default:
+		System.out.println("Co Ty tam mamroczesz pod nosem?");
+		
+		
+		input.close();
+		
+	}	
+	}
+
+public String[][] getGarden() {
+	return garden;
+}
+
+public void setGarden(String[][] garden) {
+	this.garden = garden;
+}
+	
+}
